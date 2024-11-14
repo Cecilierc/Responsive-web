@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drikkelse menu /DGC</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header navigation -->
+    <header>
+      <nav class="topnav">
+        <a href="index.html">
+          <img src="img/logo-nav.png" alt="nav_logo" class="nav_logo" />
+        </a>
+
+        <div class="burger-menu" onclick="toggleMenu()">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+
+        <div class="nav-links" id="navLinks">
+          <div class="close-menu" onclick="toggleMenu()">x</div>
+          <!-- Close Button -->
+          <a href="bookbord.html">
+            <img src="img/bookbord.png" alt="nav_bookbord" class="nav_bb" />
+          </a>
+          <a href="menu.html">MENU</a>
+          <a href="events.html">EVENTS</a>
+          <a href="omos.html">OM OS</a>
+          <a class="bookbord-link" href="bookbord.html">BOOK BORD</a>
+        </div>
+      </nav>
+      <script>
+        function toggleMenu() {
+          const navLinks = document.getElementById('navLinks');
+          navLinks.classList.toggle('menu-open');
+        }
+      </script>
+    </header>
+
+    <!-- Overskrift -->
+    <div class="sidebar">
+      <h1 class="frokost">DRIKKELSE</h1>
+      <p>Mandag - lørdag kl. 09-18<br />Søndag kl. 09-16</p>
+    </div>
+
+    <!-- Menuen -->
+    <div class="container">
+      <div class="content2">
+        <h2 class="frokost_overskrift2">KAFFE</h2>
+        <br />
+        <p>
+          Alt vores kaffe laves med dobbelt shot og kan laves med<br />havremælk,
+          som er både vegansk og laktosefri.
+        </p>
+        <br />
+        <p>Espresso – Single 30 kr. / Dobbelt 40 kr.</p>
+        <br />
+        <p>Cappuccino 55 kr.</p>
+        <br />
+        <p>Café latte 55 kr.</p>
+        <br />
+        <p>Chai latte 55 kr.</p>
+        <br />
+        <p>Cortado 45 kr.</p>
+        <br />
+        <p>Stempelkaffe 85 kr.<br />4-5 kopper</p>
+        <br />
+        <p>Americano 50 kr.</p>
+        <br />
+        <p>Filterkaffe – Kop 40 kr. / Refill 20 kr.</p>
+        <br />
+        <p>Varm kakao m. flødeskum 55 kr.</p>
+        <br />
+        <p>
+          Iskaffe 55 kr.<br />(Med sirup +10 kr. Vælg mellem chokolade, vanilje
+          eller karamel)
+        </p>
+        <br />
+        <p>Te 50 kr.</p>
+        <br />
+        <h2 class="frokost_overskrift2">DET KOLDE</h2>
+        <br />
+        <p>
+          Sodavand – 25 cl. 45 kr. / 40 cl. 60 kr.<br />
+          Coca Cola, Coca Cola Zero, Fanta, Sprite Zero, Schweppes lemon,
+          Danskvand, Danskvand med citrus.
+        </p>
+        <br />
+        <p>
+          Økologisk saft – 60 kr.<br />Hyldeblomst, æblemost, hindbær eller
+          solbær.
+        </p>
+        <br />
+        <p>Friskpresset appelsinjuice – 60 kr.</p>
+        <br />
+        <p>Is-the med fersken – 50 kr.</p>
+        <br />
+        <p>
+          Hjemmelavet lemonade 50 kr.<br />Vælg mellem rabarber, passionsfrugt
+          eller citron/mynte.
+        </p>
+        <br />
+        <p>Kildevand – 1/2 ltr. 35 kr.</p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site_footer">
+      <div class="footer_container">
+        <div class="footer_text_columns">
+          <div class="footer-column">
+            <h3>DenGULEcafé.dk</h3>
+            <br />
+            <p>
+              <a href="bookbord.html">Book bord</a><br />
+              <br />
+              <a href="menu.html">Menu</a><br />
+              <br />
+              <a href="events.html">Events</a><br />
+              <br />
+              <a href="omos.html">Om os</a><br />
+            </p>
+          </div>
+          <div class="footer-column">
+            <h3>Kontkt os</h3>
+            <br />
+            <p>
+              Tlf.: +45 26 71 81 67<br />
+              <br />
+              Mail: dengulecafe@dengulecafe.dk<br />
+            </p>
+          </div>
+          <div class="footer-column">
+            <div class="footer-location">
+              <div class="footer-location-item">
+                <img
+                  src="img/pin_footer.png"
+                  alt="Adresse logo"
+                  class="footer-logo" />
+                <span>Jægergårdsgade 2A, 8000 Aarhus</span>
+              </div>
+              <div class="footer-location-item">
+                <a
+                  href="https://www.instagram.com/dengulecafe"
+                  target="_blank"
+                  aria-label="Instagram">
+                  <img
+                    src="img/insta_footer.png"
+                    alt="Instagram logo"
+                    class="footer-logo" />
+                  <span>dengulecafe</span>
+                </a>
+              </div>
+              <div class="footer-location-item">
+                <a
+                  href="https://www.facebook.com/dengulecafe"
+                  target="_blank"
+                  aria-label="Facebook">
+                  <img
+                    src="img/face_footer.png"
+                    alt="Facebook logo"
+                    class="footer-logo" />
+                  <span>Den Gule Café</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <a href="index.html">
+            <img
+              src="img/logo-nav.png"
+              alt="Footer Billede"
+              class="footer_billede" />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

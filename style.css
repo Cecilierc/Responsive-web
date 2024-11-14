@@ -1,0 +1,1234 @@
+/* -----------------------------------------------
+                      Reset
+----------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* -----------------------------------------------
+                      Body
+----------------------------------------------- */
+html,
+body {
+  font-size: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f1e7dc;
+}
+
+/* -----------------------------------------------
+                Header / Navigation
+----------------------------------------------- */
+/* Skjuler Book Bord-linket på computere */
+.bookbord-link {
+  display: none;
+}
+
+/* Base styling for the navigation bar */
+.topnav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f1e7dc;
+  padding: 10px 0;
+  height: 90px;
+  z-index: 100;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  margin-right: 80px;
+  z-index: 10;
+}
+
+.nav_logo {
+  width: auto;
+  height: 110px;
+  padding: 2px;
+}
+
+.nav_bb {
+  width: 220px;
+  height: auto;
+  margin-top: -17px;
+}
+
+.topnav a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 24px;
+  font-weight: 20;
+  padding: 5px 10px;
+  transition: background-color 0.3s;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a:hover {
+  text-decoration: underline 1px;
+}
+
+/* Burger menu icon, hidden by default */
+.burger-menu {
+  display: none;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.burger-menu .line {
+  width: 30px;
+  height: 4px;
+  background-color: #004aad;
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+/* Close button for the burger menu */
+/* Hide the close button by default */
+.close-menu {
+  display: none;
+}
+
+/* -----------------------------------------------
+                      Forside
+----------------------------------------------- */
+/*----------------------------Section 1 ------------------*/
+/* Styling af hele containeren */
+.content-forside {
+  position: relative;
+  width: 100%;
+  max-width: 1200px; /* Adjust as needed */
+  margin-top: 300px;
+  margin-bottom: 10%;
+  margin-left: 10%;
+  overflow: hidden;
+  margin-top: 12%;
+}
+
+/* Style for the image */
+.forside-billede {
+  width: 65%;
+  height: auto;
+  display: block;
+  z-index: -10;
+  position: relative;
+}
+
+/* Container for the overlay text */
+.text-forside-container {
+  position: absolute;
+  z-index: 50;
+  top: 50%;
+  text-align: left;
+  margin-left: 56.5%;
+  transform: translateY(-50%);
+}
+
+.overskrift_forside {
+  color: #004aad;
+  font-size: 150px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bolder;
+}
+
+/*----------------------------Section 2 ------------------*/
+/*overskrift*/
+.forside_venstre_overskrift {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 170%;
+  font-weight: 100;
+  font-size: 40px;
+}
+
+/*brødteksten*/
+.tekst_venstre {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 50;
+  font-size: 24px;
+}
+
+/*boksen der fylder det hele*/
+.section1 {
+  padding-top: 5%;
+  display: flex;
+  height: 600px;
+  padding-bottom: 10%;
+}
+
+/*boksen til højre - teksen*/
+.kol_tekst {
+  flex: 1;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  padding-right: 25%;
+  justify-content: right;
+}
+
+/*størrelse på billedet*/
+.forside-billede2 {
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  padding-left: 30%;
+}
+
+.se-menu {
+  width: 70%;
+  height: auto;
+  padding-left: 5%;
+}
+
+/* -----------------------------------------------
+                      EVENTS
+----------------------------------------------- */
+.content {
+  display: flex;
+  justify-content: flex-start;
+  padding: 50px;
+  padding-top: 160px;
+}
+
+.text-container {
+  width: 60%;
+}
+
+.image-block {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.image {
+  width: 200px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.image-text h4 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  font-weight: 125;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.image-text p {
+  font-size: 1em;
+  color: #000000;
+  margin-bottom: 15px; /* Afstand mellem afsnitene */
+  font-weight: 75;
+  font-size: 15px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Vertical Heading Styles */
+.vertical-heading {
+  writing-mode: vertical-rl;
+  transform: rotate(360deg);
+  position: absolute;
+  top: 38%;
+  right: 10%;
+  transform-origin: center;
+}
+
+.vertical-heading h2 {
+  margin: 0;
+  font-size: 100px;
+  font-weight: bold;
+  color: #004aad;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* -----------------------------------------------
+                      MENUKORTS
+----------------------------------------------- */
+
+.content2 {
+  justify-content: flex-start;
+  padding: 50px;
+  padding-top: 5%;
+  font-weight: 50;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.sidebar {
+  background-color: #f1e7dc;
+  padding: 40px;
+  text-align: left;
+  padding-top: 10%;
+}
+
+.frokost {
+  font-size: 150px; /* Large font for laptop */
+  font-weight: bold;
+  color: #004aad;
+  margin-top: 2%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.sidebar p {
+  font-size: 18px;
+  color: #000000;
+  padding-left: 1%;
+  font-weight: 50;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Main container styling */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 800px;
+  padding: 20px;
+  margin: auto;
+}
+
+/* Content styling */
+.content p {
+  line-height: 1.6;
+  margin-bottom: 10px;
+  color: #000000;
+  font-weight: 50;
+}
+
+.frokost_overskrift2 {
+  font-size: 28px;
+  margin-top: 20px;
+  color: #000000;
+  font-weight: 200;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* -----------------------------------------------
+                      MENUSIDEN
+----------------------------------------------- */
+.menu-content {
+  padding-top: 50px; /* Justér for header-højde */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding-left: 0%; /* Tilføjer lidt plads til venstre for indhold */
+}
+
+.menu-section a {
+  text-decoration: none; /* Fjerner understregning fra alle links i menu-sektionerne */
+  color: inherit; /* Beholder den eksisterende farve eller vælg en anden */
+}
+
+.menu-content h1 {
+  font-size: 130px; /* Øger skriftstørrelsen */
+  color: #0645ad; /* Matcher titelens farve */
+  font-weight: bold;
+  text-align: left; /* Flytter teksten til venstre */
+  margin-bottom: 20px;
+  margin-left: 5%;
+  padding-top: 7%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.menu-section {
+  display: inline-block;
+  width: 45%; /* Justér efter behov */
+  margin: 20px;
+  text-align: center;
+  vertical-align: top;
+}
+
+.menu-image {
+  width: 100%; /* Sørger for at billedet passer i containeren */
+  max-width: 500px; /* Begrænser bredde */
+  height: 600px; /* Ensartet højde */
+  object-fit: cover; /* Billedet fylder hele området uden forvrængning */
+  transition: transform 0.3s ease;
+  margin: 0; /* Fjern ekstra margener */
+}
+
+.menu-label {
+  display: block;
+  margin-top: 10px;
+  font-size: 28px;
+  color: #000;
+  font-weight: 150;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* -----------------------------------------------
+                      OM OS
+----------------------------------------------- */
+.about-us {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Justerer indholdet til toppen */
+  position: relative;
+  padding-top: 10%;
+  padding-bottom: 30%;
+}
+
+.content-omos {
+  display: flex;
+  flex-direction: column; /* Placerer elementer lodret */
+  align-items: center; /* Centrerer både overskrift og billede */
+  position: relative;
+}
+
+.overskrift-omos {
+  font-size: 150px;
+  margin-bottom: 20px; /* Lille afstand mellem overskriften og billedet */
+  font-weight: bold;
+  color: #004aad;
+  position: relative;
+  z-index: 2; /* Placer overskriften over billedet */
+  margin-top: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.image-wrapper-omos {
+  position: relative;
+  z-index: 1; /* Billedet ligger under overskriften */
+}
+
+.image-ude {
+  width: 750px; /* Størrelsen på billedet */
+  height: 600px;
+  object-fit: cover;
+  margin-top: -100px;
+}
+
+.about-section-new {
+  margin-top: -250px; /* Move entire section up */
+}
+
+.content-section-omos {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.image-text-omos,
+.text-image-omos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: -120px; /* Reduced margin for closer spacing */
+}
+
+.image-left-omos,
+.image-right-omos {
+  width: 53%;
+  height: auto;
+  object-fit: cover;
+}
+
+.text-omos {
+  width: 45%;
+  text-align: left;
+  background-color: #f1e7dc;
+}
+
+.content-section-omos:last-of-type {
+  margin-top: -100px; /* Negative margin to move the section up */
+}
+
+.omos-overskrift2 {
+  font-size: 26px;
+  margin-bottom: 10px;
+  font-weight: 150;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.omostekst {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #333;
+  font-weight: 75;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.text4-omos {
+  text-align: left;
+  margin-top: 5%;
+  justify-content: center;
+  padding-left: 9.5%;
+  padding-bottom: 8%;
+}
+
+.content-section4-omos {
+  justify-content: center;
+}
+
+/* -----------------------------------------------
+                        Book bord
+----------------------------------------------- */
+.bb-overskrift {
+  font-size: 130px; /* Justér størrelsen efter behov */
+  font-weight: bold;
+  color: #0645ad; /* Tilpas farven, hvis nødvendigt */
+  text-align: center;
+  margin-top: 10%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* Vandrette linjer ved boksen */
+main::before,
+main::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  height: 2px;
+  background-color: #003399;
+}
+
+main::before {
+  top: calc(
+    50% - 245px
+  ); /* Justér positionen, så den ligger i forlængelse af toppen af boksen */
+}
+
+main::after {
+  top: calc(
+    50% + 245px
+  ); /* Justér positionen, så den ligger i forlængelse af bunden af boksen */
+}
+
+/* Main styling */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  flex: 1;
+  width: 100%;
+  position: relative;
+  z-index: 1; /* Sørger for, at hovedindholdet vises over linjerne */
+}
+
+/* Booking-container styling */
+.booking-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 800px;
+  width: 100%;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Lodrette linjer på siden af booking-container */
+.booking-container::before,
+.booking-container::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  width: 2px;
+  height: 96.5%;
+  background-color: #003399; /* Blå farve */
+}
+
+.booking-container::before {
+  left: -15px; /* Placér linjen lidt til venstre for boksen */
+}
+
+.booking-container::after {
+  right: -15px; /* Placér linjen lidt til højre for boksen */
+}
+
+/* Café logo styling */
+.cafe-logo {
+  text-align: center;
+}
+.bb-logo-billede {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Booking trin navigation */
+.booking-steps {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9em;
+  color: #666;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+  font-weight: 75;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Booking-valg styling */
+.booking-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  text-align: center;
+  margin-top: 70px; /* Øget afstand for at rykke det længere ned */
+}
+.booking-options legend {
+  font-size: 1.5em;
+  font-weight: 200;
+  color: #333;
+  margin-bottom: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Booking-knapper */
+.booking-button {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  font-size: 1em;
+  background-color: #f1e7dc;
+  border: 1px solid #b7b2ac;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  font-weight: 75;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.booking-button:hover {
+  background-color: #b7b2ac;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.booking-button input[type='radio'] {
+  display: none;
+}
+
+/* ikoner til formular */
+.booking-steps {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9em;
+  color: #666;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.booking-steps span {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Giver lidt afstand mellem ikon og tekst */
+}
+
+.booking-steps i {
+  color: #000000; /* Blå farve for at matche temaet */
+  font-size: 1em; /* Justér størrelsen efter behov */
+}
+
+/* -----------------------------------------------
+                      Footer 
+----------------------------------------------- */
+
+.site_footer {
+  background-color: #f1e7dc; /* Grå baggrund */
+  padding: 20px 0; /* Lidt padding for at give plads */
+  color: #000; /* Sort tekstfarve */
+  width: 100%; /* Strækker footeren over hele sidens bredde */
+}
+
+/*container for footeren*/
+.footer_container {
+  display: flex; /* Brug flexbox til at arrangere elementer i rækken */
+  align-items: center; /* Centrerer elementerne vertikalt */
+  justify-content: space-evenly;
+  padding: 0 2%; /* Indrykker til venstre og højre */
+  max-width: 100%;
+}
+
+/* Container til billedet */
+.footer_billede_container {
+  display: flex;
+  justify-content: right; /* Billedet placeres til højre */
+}
+
+.footer_billede {
+  width: 70%; /* Juster størrelsen efter behov */
+  height: auto;
+}
+
+/*tekstkolonnerne*/
+.footer_text_columns {
+  display: flex;
+  width: 95%; /* Juster bredden, så tekstkolonnerne ikke fylder for meget */
+  justify-content: space-between; /* Fordel plads mellem kolonnerne */
+}
+
+/*kollonnernes fordeling*/
+.footer-column {
+  width: 40%, 30%, 30%; /* Sørger for, at hver kolonne fylder en tredjedel af pladsen */
+  padding: 60px 30px; /* Tilføjer lidt padding mellem kolonnerne */
+  text-decoration: none;
+  color: #000; /* Justér farven på tekst */
+}
+
+/*kollonne overskrift*/
+.footer-column h3 {
+  font-size: 1.2em; /* Større skrifttype til overskrifter */
+  margin-bottom: 5%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 150;
+  font-size: 18px;
+}
+
+/*kollonne brødtekst*/
+.footer-column p {
+  font-size: 13px; /* Mindre skrifttype til tekstindhold */
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 50;
+  font-size: 18px;
+}
+
+/*fjern standard styling fra links i footeren*/
+.footer-column a {
+  text-decoration: none; /* Fjern understregning */
+  color: #000; /* Sort tekstfarve som resten af teksten */
+  font-size: 13px; /* Samme skrifttype størrelse som <p> */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Sørg for at bruge samme skrifttype */
+  font-weight: 50;
+  font-size: 18px;
+}
+
+/*hover-effekt (streg under, når musen kommer over, hvis ønsket*/
+.footer-column a:hover {
+  text-decoration: underline; /* Tilføj en understregning ved hover, hvis ønsket */
+}
+
+/* Container til tekst og logoer under hinanden */
+.footer-location {
+  display: flex;
+  flex-direction: column; /* Sørg for, at hver linje er under hinanden */
+  gap: 20px; /* Afstand mellem linjerne */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 50;
+  font-size: 18px;
+}
+
+/* Layout af hver tekstlinje og logo */
+.footer-location-item {
+  display: flex;
+  align-items: center; /* Centrer logo og tekst vertikalt */
+  gap: 10px; /* Afstand mellem logo og tekst */
+}
+
+/* Justering af logoerne */
+.footer-logo {
+  width: 40px; /* Justér størrelse på logoerne */
+  height: auto; /* Holder proportioner */
+  vertical-align: middle; /* Sikrer, at logo og tekst står i linje */
+}
+
+/*-------------------- Til mobil-----------------------*/
+@media (max-width: 500px) {
+  /* -----------------------------------------------
+                      Navigation
+----------------------------------------------- */
+  .nav-links {
+    display: none; /* Hide nav links on mobile */
+  }
+
+  .bookbord-link {
+    display: block; /* Vis linket i burger-menuen */
+    color: #f1e7dc;
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .burger-menu {
+    display: block; /* Show burger menu icon on mobile */
+  }
+
+  /* Styles for open menu */
+  .menu-open {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #004aad;
+    flex-direction: column;
+    justify-content: center; /* Vertically center items */
+    align-items: center; /* Horizontally center items */
+    gap: 20px;
+    z-index: 1000;
+  }
+
+  .menu-open a {
+    color: #f1e7dc;
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center; /* Center text horizontally */
+    text-decoration: none;
+    width: 100%; /* Make the links span full width */
+    padding: 10px 0;
+  }
+
+  .menu-open .nav_bb {
+    display: none;
+  }
+
+  /* Show the close button only when the menu is open */
+  .menu-open .close-menu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 80px;
+    color: #f1e7dc;
+    cursor: pointer;
+    font-weight: bold;
+    z-index: 1010;
+    font-family: Arial;
+  }
+
+  /* Styling for the submenu */
+  .sub-menu {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    display: none; /* Initially hidden */
+    flex-direction: column;
+    gap: 10px;
+    text-align: center; /* Center submenu items */
+  }
+
+  .sub-menu.show {
+    display: flex; /* Show submenu when toggled */
+  }
+
+  .sub-menu a {
+    color: #f1e7dc;
+    font-size: 24px; /* Adjust size as needed */
+    font-weight: normal;
+    text-decoration: none;
+  }
+
+  /* -----------------------------------------------
+                      Forside
+----------------------------------------------- */
+  /*----------------------------Section 1 ------------------*/
+  /* Styling af hele containeren */
+  .content-forside {
+    margin-top: 150px;
+  }
+
+  /* Style for the image */
+  .forside-billede {
+    width: 55%;
+  }
+
+  /* Container for the overlay text */
+  .text-forside-container {
+    margin-left: 47%;
+  }
+
+  .overskrift_forside {
+    font-size: 45px;
+  }
+
+  /*----------------------------Section 2 ------------------*/
+  /*overskrift*/
+  .forside_venstre_overskrift {
+    font-size: 25px;
+  }
+
+  /*brødteksten*/
+  .tekst_venstre {
+    font-size: 14px;
+    justify-content: center;
+  }
+
+  /*boksen der fylder det hele*/
+  .section1 {
+    padding-top: 50px;
+    display: flex;
+    height: 300px;
+    text-align: center;
+  }
+
+  /*boksen til højre - teksen*/
+  .kol_tekst {
+    padding: 10%;
+    justify-content: center;
+  }
+
+  /*størrelse på billedet*/
+  .forside-billede2 {
+    display: none;
+  }
+
+  .se-menu {
+    width: 60%;
+  }
+
+  /* -----------------------------------------------
+                      EVENTS
+----------------------------------------------- */
+  .content {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 200px;
+    width: 100%;
+  }
+
+  .text-container {
+    width: 90%;
+  }
+
+  .image-block {
+    display: table-row;
+    margin-bottom: 10px;
+  }
+
+  .image {
+    width: 300px;
+    height: 300px;
+    margin-left: 7%;
+  }
+
+  .image-text h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+  }
+
+  .image-text p {
+    font-size: 12px;
+    color: #000000;
+    margin-bottom: 14px;
+  }
+
+  .image-text {
+    width: 300px;
+    text-align: left;
+    margin-left: 7%;
+    margin-bottom: 40px;
+  }
+
+  /* Vertical Heading Styles */
+  .vertical-heading {
+    writing-mode: horizontal-tb;
+    transform: rotate(0deg);
+    top: 14%;
+    left: 10%;
+  }
+
+  .vertical-heading h2 {
+    font-size: 65px;
+  }
+
+  /* -----------------------------------------------
+                      MENUKORTS
+----------------------------------------------- */
+  .frokost {
+    font-size: 50px;
+    text-align: left;
+    padding-top: 100px;
+  }
+
+  /* Align sidebar content centrally for better readability */
+  .sidebar {
+    text-align: left;
+    padding: 10px;
+  }
+
+  /* Adjust paragraph font size */
+  .sidebar p {
+    font-size: 14px;
+  }
+
+  /* Content adjustments */
+  .container {
+    padding: 10px;
+  }
+
+  .frokost_overskrift2 {
+    font-size: 16px;
+  }
+
+  .content p {
+    font-size: 12px;
+  }
+
+  /* -----------------------------------------------
+                      MENUSIDEN
+----------------------------------------------- */
+  .menu-content h1 {
+    font-size: 80px; /* Øger skriftstørrelsen */
+    padding-top: 50px;
+    margin-bottom: 5px;
+  }
+
+  .menu-section {
+    margin: 5px;
+  }
+
+  .menu-image {
+    max-width: 85%; /* Begrænser bredde */
+    height: auto; /* Ensartet højde */
+  }
+
+  .menu-label {
+    margin-top: 5px;
+    font-size: 18px;
+    color: #000;
+  }
+
+  /* -----------------------------------------------
+                        Om os
+----------------------------------------------- */
+  .about-us {
+    padding-top: 40%;
+    padding-bottom: 10%;
+  }
+
+  .content-omos {
+    position: relative; /* Sørger for, at overskriften placeres relativt til denne container */
+  }
+
+  .overskrift-omos {
+    font-size: 80px;
+    position: absolute;
+    top: 30%; /* Juster denne værdi for at placere overskriften i forhold til billedet */
+    transform: translateY(
+      -134%
+    ); /* Flytter overskriften opad, så den står halvvejs over billedet */
+  }
+
+  .image-ude {
+    width: 330px; /* Størrelsen på billedet */
+    height: 280px;
+    margin-top: 50px;
+  }
+
+  .about-section-new {
+    margin-top: 50px; /* Move entire section up */
+  }
+
+  .content-section-omos {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px;
+  }
+
+  .image-text-omos,
+  .text-image-omos {
+    display: table-row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: -120px; /* Reduced margin for closer spacing */
+  }
+
+  .image-left-omos {
+    width: 80%;
+    padding-left: 8%;
+  }
+  .image-right-omos {
+    width: 85%;
+    padding-left: 7%;
+  }
+
+  .text-omos {
+    width: 75%;
+    padding-left: 8%;
+  }
+
+  .content-section-omos:last-of-type {
+    margin-top: -100px; /* Negative margin to move the section up */
+  }
+
+  .omostekst {
+    font-size: 14px;
+  }
+
+  .text4-omos {
+    text-align: left;
+    margin-top: 5%;
+    justify-content: center;
+    padding-left: 13%;
+    padding-bottom: 8%;
+    width: 68%;
+  }
+
+  .content-section4-omos {
+    padding-top: 70px;
+    margin-left: -24px;
+  }
+
+  .image-text-omos {
+    display: flex;
+    flex-direction: column; /* Skifter retningen, så tekst kommer over billedet */
+    align-items: center; /* Centrerer elementerne, hvis nødvendigt */
+    margin-left: -37px; /* Juster denne værdi for mere eller mindre forskydning */
+  }
+
+  .image-left-omos {
+    order: 2; /* Flytter billedet til nederst position */
+    margin-left: 10px; /* Juster denne værdi for mere eller mindre forskydning */
+  }
+
+  .text-omos {
+    order: 1; /* Flytter teksten til øverste position */
+    margin-left: -5px; /* Juster denne værdi for mere eller mindre forskydning */
+  }
+
+  /* -----------------------------------------------
+                        Book bord
+----------------------------------------------- */
+  .bb-overskrift {
+    font-size: 50px; /* Justér størrelsen efter behov */
+    margin-top: 30%;
+  }
+
+  main::before {
+    top: calc(
+      50% - 139px
+    ); /* Justér positionen, så den ligger i forlængelse af toppen af boksen */
+  }
+
+  main::after {
+    top: calc(
+      50% + 187px
+    ); /* Justér positionen, så den ligger i forlængelse af bunden af boksen */
+  }
+
+  /* Main styling */
+  main {
+    width: 90%;
+  }
+
+  /* Booking-container styling */
+  .booking-container {
+    display: table-row;
+    gap: 5px;
+    max-width: 300px;
+    width: 100%;
+    padding: 5px;
+  }
+
+  /* Lodrette linjer på siden af booking-container */
+  .booking-container::before,
+  .booking-container::after {
+    height: 110%;
+  }
+
+  .booking-container::before {
+    left: -25px; /* Placér linjen lidt til venstre for boksen */
+  }
+
+  .booking-container::after {
+    right: -25px; /* Placér linjen lidt til højre for boksen */
+  }
+
+  /* Café logo styling */
+  .cafe-logo {
+    display: none;
+  }
+
+  /* -----------------------------------------------
+                        Footer
+----------------------------------------------- */
+  /* Skjul første kolonne (DenGULEcafé.dk) i mobilvisning */
+  .footer_text_columns .footer-column:first-child {
+    display: none;
+  }
+  /* Ændre layout til vertikal format */
+  .footer_container {
+    flex-direction: column; /* Skift til kolonne layout */
+    align-items: center; /* Centrerer alle elementer */
+    text-align: center; /* Centrer teksten */
+    padding: 50px; /* Ekstra padding for mobil */
+  }
+
+  .footer_text_columns {
+    flex-direction: column; /* Gør hver kolonne til en linje */
+    align-items: center; /* Centrer kolonner */
+    width: 100%; /* Fylder hele bredden */
+    gap: 25px; /* Lidt afstand mellem kolonnerne */
+  }
+
+  /* Justering af hver kolonne */
+  .footer-column {
+    width: 100%; /* Fylder hele bredden på mobil */
+    padding: 10px 0; /* Mindre padding */
+    text-align: center; /* Centrer tekst */
+  }
+
+  /* Justér logo billede på mobil */
+  .footer_billede {
+    width: 40%; /* Mindre størrelse til logoet */
+    height: auto;
+    margin-top: -10px; /* Ekstra margin-top for plads */
+  }
+
+  /* Justér fontstørrelse for overskrifter og brødtekst */
+  .footer-column h3 {
+    font-size: 0.9rem; /* Mindre font til overskrifter */
+    margin-bottom: -15px; /* Mindre margin */
+  }
+
+  .footer-column p,
+  .footer-column a,
+  .footer-location-item span {
+    font-size: 0.6rem; /* Justér brødtekst til mobil */
+    margin: 5px 0; /* Lidt afstand mellem links og tekst */
+  }
+
+  /* Layout af adresser og sociale links */
+  .footer-location {
+    gap: 8px; /* Mindre afstand på mobil */
+  }
+
+  /* Justér ikon størrelse */
+  .footer-logo {
+    width: 25px; /* Mindre ikonstørrelse til mobil */
+  }
+
+  /* Justér afstand og placering af ikoner og tekst i footer-location */
+  .footer-location-item {
+    justify-content: center; /* Centrer ikon og tekst på mobil */
+  }
+}
